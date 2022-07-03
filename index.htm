@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chad's Corner</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Passion+One&display=swap" rel="stylesheet">    
+    <link rel="stylesheet" href="website1/style.css">
+    <link rel="icon" href="logo.png" type="image/x-icon">
+    <!-- css reset -->
+    <style>
+        header{
+            background-color: rgba(0, 0, 0, 0.397);
+            width: 100%;
+            display: inline-block;
+            position: sticky;
+            margin: auto;
+        }
+        body{
+            margin: 0px;
+            padding: 0px;
+            background-color: rgba(0, 0, 0, 0.5);
+            background-image: url("bg.png");
+            color: white;
+            /* font-family: 'Pacifico', cursive; */
+            font-family: 'Passion One', cursive;
+            font-size: 20px;
+        }
+        .left{
+            /* border: 2px solid white; */
+            display: inline-block;
+            position: absolute;
+            left: 5px;
+            top: 0px;
+            padding: 8px;
+        }
+        .mid{
+            /* border: 2px solid rgb(0, 255, 213); */
+            display: block;
+            margin: 0px auto;
+            width: 80%;
+            text-align: center;
+
+        }
+        .right{
+            /* border: 2px solid rgb(255, 0, 255); */
+            display: inline-block;
+            position: absolute;
+            right: 10px;
+            top: 0px;
+        }
+        .navbar{
+            display: inline-block;
+
+        }
+        .navbar li{
+            display: inline-block;
+            
+        }
+        .navbar li a{
+            color: white;
+            text-decoration: none;
+            padding: 12px 30px;
+            margin: auto;
+
+        }
+        .navbar li a:hover, .navbar li a:active{
+            border-radius: 12px;
+            background-color: white;
+            color: black;
+        }
+        .left img{
+            width: 50px;
+            /* filter: invert(100%); */
+        }
+        .left img:hover {
+            filter: invert(100%);
+            cursor: pointer;
+        }
+        /* .btn{
+            margin: 0px 9px;
+            color: white;
+            background-color: black;
+        } */
+        .search{
+            margin: 8px 13px;
+            padding: 12px 20px;
+            border: 0px;
+            border-radius: 12px;
+            color:rgb(255, 255, 255);
+            background-color: rgba(0, 0, 0, 0);
+            font-family: 'Passion One', cursive;
+            font-size: 20px;
+        }
+        .search::placeholder{
+            color: rgb(255, 255, 255);
+            text-align: center;
+            font-family: 'Passion One', cursive;
+            font-size: 20px;
+        }
+        .search:focus{
+            background-color: white;
+            color: black;
+        }
+        .search:focus::placeholder{
+            color: rgb(0, 0, 0);
+        }
+        .search:hover{
+            background-color: white;
+            color: black;
+            cursor: pointer;
+        }
+        .search:hover::placeholder{
+            color: rgb(0, 0, 0);
+        }
+        .search:focus:hover{
+            cursor: text;
+        }
+        .container{
+            margin: 90px auto;
+            padding: 10px 10px;
+            width: 46%;
+            background-color: rgba(0, 0, 0, 0.507);
+            border: 2px solid rgba(255, 255, 255, 0.411);
+            border-radius: 5px;
+        }
+        h1{
+            letter-spacing: 1.2px;
+        }
+        .btndiv{
+            margin: 25px 0px 5px 0px;
+        }
+        .form-group{
+            background-color: rgba(0, 0, 0, 0.568);
+            padding: 10px 15px;
+            margin: 15px 2px;
+            border-radius: 5px;
+        }
+        .form{
+            height: 27px;
+            width: 200px;
+            display: block;
+            padding: 6px;
+            border-radius: 5px;
+            background-color: rgba(255, 255, 255, 0.768);
+            font-family: 'Passion One', cursive;
+            font-size: 18px;
+            /* margin: 10px;  */
+            
+        }
+        .btn{
+            /* margin: 15px 2px ; */
+            display: block;
+            margin:auto ;
+            height: 45px;
+            width: 25%;
+            background-color: rgb(255, 255, 255, 0.768);
+            border: none;
+            border-radius: 5px;
+            font-family: 'Passion One', cursive;
+            font-size: 20px;
+        }
+        .btn:hover{
+            background-color: rgb(0, 0, 0, 0.768);
+            color: white;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    <header class="header">
+        <div class="left">
+            <img src="logo.png" alt="">
+        </div>
+    <div class="mid">
+        <ul class="navbar">
+            <li><a href="" target="_blank"> Home</a></li>
+            <li><a href="" target="_blank"> About Us</a></li>
+            <li><a href="" target="_blank"> Fitness Calculator</a></li>
+            <li><a href="" target="_blank"> Contact Us</a></li>
+        </ul>
+    </div>
+    <div class="right">
+        <!-- <p>Right</p> -->
+        <!-- <button class="btn">Call Us Now</button><button class="btn">Email Us</button> -->
+        <input type="text" name="" id="" class="search" placeholder="Search Here">
+    </div>
+    </header>
+    <div class="container">
+        <h1>Start you journey of becoming a GIGACHAD.</h1>
+        <form action="IDontKnowAboutBackend.php">
+            <div class="form-group">
+                <p>Name: </p>
+                <input type="text" name="" id="" placeholder="Enter Your name" class="form">
+            </div>
+            <div class="form-group">
+                <p>Email: </p>
+                <input type="text" name="" id="" placeholder="Enter Your Email Add." class="form">
+            </div>
+            <div class="form-group">
+                <p>Contact Details: </p>
+                <input type="text" name="" id="" placeholder="Enter Your Phone Number" class="form">
+            </div>
+            <div class="btndiv">
+            <button class="btn">Let's Go</button>
+            </div>
+        </form>
+    </div>
+</body>
+</html>
